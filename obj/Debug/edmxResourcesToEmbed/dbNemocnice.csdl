@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbNemocniceModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="dbNemocniceEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="tbLekari" EntityType="dbNemocniceModel.Lekar" />
+    <EntitySet Name="tbOrdinace" EntityType="dbNemocniceModel.Ordinace" />
+    <AssociationSet Name="FK_tbOrdinace_tbLekari" Association="dbNemocniceModel.FK_tbOrdinace_tbLekari">
+      <End Role="tbLekari" EntitySet="tbLekari" />
+      <End Role="tbOrdinace" EntitySet="tbOrdinace" />
+    </AssociationSet>
+    <EntitySet Name="tbUcty" EntityType="dbNemocniceModel.Ucet" />
+    <EntitySet Name="tbPacienti" EntityType="dbNemocniceModel.Pacient" />
+  </EntityContainer>
+  <EntityType Name="Lekar">
+    <Key>
+      <PropertyRef Name="idLekar" />
+    </Key>
+    <Property Name="idLekar" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Jmeno" Type="String" Nullable="false" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="Prijmeni" Type="String" Nullable="false" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="DatumNarozeni" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Telefon" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="Email" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Poznamka" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="tbOrdinace" Relationship="dbNemocniceModel.FK_tbOrdinace_tbLekari" FromRole="tbLekari" ToRole="tbOrdinace" />
+  </EntityType>
+  <EntityType Name="Ordinace">
+    <Key>
+      <PropertyRef Name="idOrdinace" />
+    </Key>
+    <Property Name="idOrdinace" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="idLekar" Type="Int32" Nullable="false" />
+    <Property Name="Mistnost" Type="Int16" Nullable="false" />
+    <Property Name="Patro" Type="Int16" Nullable="false" />
+    <Property Name="Blok" Type="String" MaxLength="3" Unicode="true" FixedLength="true" />
+    <NavigationProperty Name="tbLekari" Relationship="dbNemocniceModel.FK_tbOrdinace_tbLekari" FromRole="tbOrdinace" ToRole="tbLekari" />
+  </EntityType>
+  <Association Name="FK_tbOrdinace_tbLekari">
+    <End Role="tbLekari" Type="dbNemocniceModel.Lekar" Multiplicity="1" />
+    <End Role="tbOrdinace" Type="dbNemocniceModel.Ordinace" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbLekari">
+        <PropertyRef Name="idLekar" />
+      </Principal>
+      <Dependent Role="tbOrdinace">
+        <PropertyRef Name="idLekar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Ucet">
+    <Key>
+      <PropertyRef Name="IdUcet" />
+    </Key>
+    <Property Type="Int32" Name="IdUcet" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="NazevUctu" Nullable="false" />
+    <Property Type="String" Name="Heslo" Nullable="false" Unicode="true" />
+    <Property Type="String" Name="Jmeno" Nullable="false" />
+    <Property Type="String" Name="Prijmeni" Nullable="false" />
+    <Property Type="Boolean" Name="Pohlavi" Nullable="true" />
+    <Property Type="DateTime" Name="DatumNarozeni" Nullable="false" />
+    <Property Type="String" Name="Adresa" Nullable="true" />
+    <Property Type="Int16" Name="Funkce" Nullable="false" />
+    <Property Type="Boolean" Name="Aktivovany" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pacient">
+    <Key>
+      <PropertyRef Name="IdPacient" />
+    </Key>
+    <Property Type="Int32" Name="IdPacient" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+</Schema>

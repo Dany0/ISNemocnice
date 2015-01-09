@@ -1,0 +1,128 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:NemocniceDataServiceReference="clr-namespace:ISNemocniceKlient.NemocniceDataServiceReference" x:Class="ISNemocniceKlient.Pages.Tabulky"
+             mc:Ignorable="d" Loaded="UserControl_Loaded" d:DesignHeight="1363" d:DesignWidth="1045">
+    <UserControl.Resources>
+        <CollectionViewSource x:Key="tbLekariViewSource" d:DesignSource="{d:DesignInstance {x:Type NemocniceDataServiceReference:Lekar}, CreateList=True}"/>
+        <CollectionViewSource x:Key="tbLekarskeZpravyViewSource" d:DesignSource="{d:DesignInstance {x:Type NemocniceDataServiceReference:LekarskaZprava}, CreateList=True}"/>
+        <CollectionViewSource x:Key="tbOrdinaceViewSource" d:DesignSource="{d:DesignInstance {x:Type NemocniceDataServiceReference:Ordinace}, CreateList=True}"/>
+        <CollectionViewSource x:Key="tbPacientiViewSource" d:DesignSource="{d:DesignInstance {x:Type NemocniceDataServiceReference:Pacient}, CreateList=True}"/>
+        <CollectionViewSource x:Key="tbUctyViewSource" d:DesignSource="{d:DesignInstance {x:Type NemocniceDataServiceReference:Ucet}, CreateList=True}"/>
+        <CollectionViewSource x:Key="tbZaznamyViewSource" d:DesignSource="{d:DesignInstance {x:Type NemocniceDataServiceReference:Zaznam}, CreateList=True}"/>
+    </UserControl.Resources>
+    <Grid Style="{StaticResource ContentRoot}">
+        <ScrollViewer>
+            <StackPanel MinWidth="200" DataContext="{StaticResource tbLekariViewSource}">
+                <DataGrid x:Name="tbLekariDataGrid" Width="627" RowDetailsVisibilityMode="VisibleWhenSelected" ItemsSource="{Binding}" Height="200" EnableRowVirtualization="True" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn x:Name="datumNarozeniColumn" Width="SizeToHeader" Header="Datum Narozeni">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <DatePicker SelectedDate="{Binding DatumNarozeni, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn x:Name="emailColumn" Width="SizeToHeader" Header="Email" Binding="{Binding Email}"/>
+                        <DataGridTemplateColumn x:Name="idLekarColumn" Width="SizeToHeader" Header="id Lekar">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Label Content="{Binding idLekar}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn x:Name="jmenoColumn" Width="SizeToHeader" Header="Jmeno" Binding="{Binding Jmeno}"/>
+                        <DataGridTextColumn x:Name="poznamkaColumn" Width="SizeToHeader" Header="Poznamka" Binding="{Binding Poznamka}"/>
+                        <DataGridTextColumn x:Name="prijmeniColumn" Width="SizeToHeader" Header="Prijmeni" Binding="{Binding Prijmeni}"/>
+                        <DataGridTextColumn x:Name="telefonColumn" Width="SizeToHeader" Header="Telefon" Binding="{Binding Telefon}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <DataGrid x:Name="tbLekarskeZpravyDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" Height="200" ItemsSource="{Binding Source={StaticResource tbLekarskeZpravyViewSource}}" RowDetailsVisibilityMode="VisibleWhenSelected" Width="893">
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn x:Name="datumDalsiKontrolyColumn" Header="Datum Dalsi Kontroly" Width="SizeToHeader">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <DatePicker SelectedDate="{Binding DatumDalsiKontroly, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn x:Name="datumVytvoreniColumn" Header="Datum Vytvoreni" Width="SizeToHeader">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <DatePicker SelectedDate="{Binding DatumVytvoreni, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn x:Name="idZaznamColumn" Binding="{Binding idZaznam}" Header="id Zaznam" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="idZpravaColumn" Binding="{Binding idZprava}" Header="id Zprava" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="popisColumn" Binding="{Binding Popis}" Header="Popis" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="predepsaneLekyColumn" Binding="{Binding PredepsaneLeky}" Header="Predepsane Leky" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="titulekColumn" Binding="{Binding Titulek}" Header="Titulek" Width="SizeToHeader"/>
+                        <DataGridCheckBoxColumn x:Name="uzavrenaColumn" Binding="{Binding Uzavrena}" Header="Uzavrena" Width="SizeToHeader"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <DataGrid x:Name="tbOrdinaceDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" Height="200" ItemsSource="{Binding Source={StaticResource tbOrdinaceViewSource}}" RowDetailsVisibilityMode="VisibleWhenSelected" Width="430">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="blokColumn" Binding="{Binding Blok}" Header="Blok" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="idLekarColumn1" Binding="{Binding idLekar}" Header="id Lekar" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="idOrdinaceColumn" Binding="{Binding idOrdinace}" Header="id Ordinace" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="mistnostColumn" Binding="{Binding Mistnost}" Header="Mistnost" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="patroColumn" Binding="{Binding Patro}" Header="Patro" Width="SizeToHeader"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <DataGrid x:Name="tbPacientiDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" Height="200" ItemsSource="{Binding Source={StaticResource tbPacientiViewSource}}" RowDetailsVisibilityMode="VisibleWhenSelected" Width="932">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="adresaColumn" Binding="{Binding Adresa}" Header="Adresa" Width="SizeToHeader"/>
+                        <DataGridTemplateColumn x:Name="datumNarozeniColumn1" Header="Datum Narozeni" Width="SizeToHeader">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <DatePicker SelectedDate="{Binding DatumNarozeni, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn x:Name="emailColumn1" Binding="{Binding Email}" Header="Email" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="idPacientColumn" Binding="{Binding idPacient}" Header="id Pacient" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="jmenoColumn1" Binding="{Binding Jmeno}" Header="Jmeno" Width="SizeToHeader"/>
+                        <DataGridCheckBoxColumn x:Name="pohlaviColumn" Binding="{Binding Pohlavi}" Header="Pohlavi" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="poznamkaColumn1" Binding="{Binding Poznamka}" Header="Poznamka" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="prijmeniColumn1" Binding="{Binding Prijmeni}" Header="Prijmeni" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="rodneCisloColumn" Binding="{Binding RodneCislo}" Header="Rodne Cislo" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="telefonColumn1" Binding="{Binding Telefon}" Header="Telefon" Width="SizeToHeader"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <DataGrid x:Name="tbUctyDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" Height="200" ItemsSource="{Binding Source={StaticResource tbUctyViewSource}}" RowDetailsVisibilityMode="VisibleWhenSelected" Width="918">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="adresaColumn1" Binding="{Binding Adresa}" Header="Adresa" Width="SizeToHeader"/>
+                        <DataGridCheckBoxColumn x:Name="aktivovanyColumn" Binding="{Binding Aktivovany}" Header="Aktivovany" Width="SizeToHeader"/>
+                        <DataGridTemplateColumn x:Name="datumNarozeniColumn2" Header="Datum Narozeni" Width="SizeToHeader">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <DatePicker SelectedDate="{Binding DatumNarozeni, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn x:Name="funkceColumn" Binding="{Binding Funkce}" Header="Funkce" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="hesloColumn" Binding="{Binding Heslo}" Header="Heslo" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="idUcetColumn" Binding="{Binding IdUcet}" Header="Id Ucet" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="jmenoColumn2" Binding="{Binding Jmeno}" Header="Jmeno" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="nazevUctuColumn" Binding="{Binding NazevUctu}" Header="Nazev Uctu" Width="SizeToHeader"/>
+                        <DataGridCheckBoxColumn x:Name="pohlaviColumn1" Binding="{Binding Pohlavi}" Header="Pohlavi" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="prijmeniColumn2" Binding="{Binding Prijmeni}" Header="Prijmeni" Width="SizeToHeader"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <DataGrid x:Name="tbZaznamyDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" Height="200" ItemsSource="{Binding Source={StaticResource tbZaznamyViewSource}}" RowDetailsVisibilityMode="VisibleWhenSelected" Width="400">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="idLekarColumn2" Binding="{Binding idLekar}" Header="id Lekar" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="idPacientColumn1" Binding="{Binding idPacient}" Header="id Pacient" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="idZaznamColumn1" Binding="{Binding idZaznam}" Header="id Zaznam" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="poznamkaColumn2" Binding="{Binding Poznamka}" Header="Poznamka" Width="SizeToHeader"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

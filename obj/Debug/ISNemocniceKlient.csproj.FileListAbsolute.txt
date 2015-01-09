@@ -1,0 +1,215 @@
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\bin\Debug\ISNemocnice.exe.config
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice.exe
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice.pdb
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\bin\Debug\ISNemocnice.exe
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\bin\Debug\ISNemocnice.pdb
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\bin\Debug\EntityFramework.dll
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\bin\Debug\EntityFramework.SqlServer.dll
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\bin\Debug\FirstFloor.ModernUI.dll
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\bin\Debug\EntityFramework.xml
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\bin\Debug\EntityFramework.SqlServer.xml
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\bin\Debug\FirstFloor.ModernUI.xml
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\ISNemocniceKlient.csprojResolveAssemblyReference.cache
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Content\FormRegistrace.baml
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Control\Block.baml
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Content\LoginForm.baml
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\MainWindow.baml
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Content\About.baml
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Content\SettingsAppearance.baml
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Pages\Login.baml
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Pages\Settings.baml
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\App.baml
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Content\FormRegistrace.g.cs
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Control\Block.g.cs
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Control\LoadingAnimation.g.cs
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Content\LoginForm.g.cs
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\MainWindow.g.cs
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Content\About.g.cs
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Content\SettingsAppearance.g.cs
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Pages\Home.g.cs
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Pages\Login.g.cs
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Pages\Settings.g.cs
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\SplashScreenWindow.g.cs
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\App.g.cs
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice_Content.g.cs
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice_MarkupCompile.cache
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice_MarkupCompile.lref
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Control\LoadingAnimation.baml
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\Pages\Home.baml
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\SplashScreenWindow.baml
+F:\formsy\ISNemocnice\new new\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice.g.resources
+C:\Projects\ISNemocnice\ISNemocnice\bin\Debug\ISNemocnice.exe.config
+C:\Projects\ISNemocnice\ISNemocnice\bin\Debug\ISNemocnice.exe
+C:\Projects\ISNemocnice\ISNemocnice\bin\Debug\ISNemocnice.pdb
+C:\Projects\ISNemocnice\ISNemocnice\bin\Debug\EntityFramework.dll
+C:\Projects\ISNemocnice\ISNemocnice\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\ISNemocnice\ISNemocnice\bin\Debug\FirstFloor.ModernUI.dll
+C:\Projects\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.Edm.dll
+C:\Projects\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.OData.dll
+C:\Projects\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.Services.Client.dll
+C:\Projects\ISNemocnice\ISNemocnice\bin\Debug\System.Spatial.dll
+C:\Projects\ISNemocnice\ISNemocnice\bin\Debug\EntityFramework.xml
+C:\Projects\ISNemocnice\ISNemocnice\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\ISNemocnice\ISNemocnice\bin\Debug\FirstFloor.ModernUI.xml
+C:\Projects\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.Edm.xml
+C:\Projects\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.OData.xml
+C:\Projects\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.Services.Client.xml
+C:\Projects\ISNemocnice\ISNemocnice\bin\Debug\System.Spatial.xml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\FormRegistrace.baml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Statistika.baml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\UserControls\Block.baml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\LoginForm.baml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\MainWindow.baml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\About.baml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\SettingsAppearance.baml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\LoginTabs.baml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Settings.baml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\App.baml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\FormRegistrace.g.cs
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Statistika.g.cs
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Tabulky.g.cs
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\UserControls\Block.g.cs
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\UserControls\LoadingAnimation.g.cs
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\LoginForm.g.cs
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\MainWindow.g.cs
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\About.g.cs
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\SettingsAppearance.g.cs
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Home.g.cs
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\LoginTabs.g.cs
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Settings.g.cs
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\SplashScreenWindow.g.cs
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\App.g.cs
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice_MarkupCompile.cache
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice_MarkupCompile.lref
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Tabulky.baml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\UserControls\LoadingAnimation.baml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Home.baml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\SplashScreenWindow.baml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice.g.resources
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice.exe
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice.pdb
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\ISNemocniceKlient.csprojResolveAssemblyReference.cache
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\PohledPacient.baml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\PohledZaznam.baml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Ordinace.baml
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\PohledPacient.g.cs
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\PohledZaznam.g.cs
+C:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Ordinace.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\bin\Debug\ISNemocnice.exe.config
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\bin\Debug\ISNemocnice.exe
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\bin\Debug\ISNemocnice.pdb
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\bin\Debug\EntityFramework.dll
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\bin\Debug\EntityFramework.SqlServer.dll
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\bin\Debug\FirstFloor.ModernUI.dll
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.Edm.dll
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.OData.dll
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.Services.Client.dll
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\bin\Debug\System.Spatial.dll
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\bin\Debug\EntityFramework.xml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\bin\Debug\EntityFramework.SqlServer.xml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\bin\Debug\FirstFloor.ModernUI.xml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.Edm.xml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.OData.xml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.Services.Client.xml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\bin\Debug\System.Spatial.xml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\ISNemocniceKlient.csprojResolveAssemblyReference.cache
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Content\FormRegistrace.baml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Content\PohledPacient.baml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Content\PohledZaznam.baml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Pages\Ordinace.baml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Pages\Statistika.baml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\UserControls\Block.baml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Content\LoginForm.baml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\MainWindow.baml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Content\About.baml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Content\SettingsAppearance.baml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Pages\LoginTabs.baml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Pages\Settings.baml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\App.baml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Content\FormRegistrace.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Content\PohledPacient.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Content\PohledZaznam.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Pages\Ordinace.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Pages\Statistika.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Pages\Tabulky.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\UserControls\Block.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\UserControls\LoadingAnimation.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Content\LoginForm.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\MainWindow.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Content\About.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Content\SettingsAppearance.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Pages\Home.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Pages\LoginTabs.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Pages\Settings.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\SplashScreenWindow.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\App.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice_MarkupCompile.cache
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice_MarkupCompile.lref
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Pages\Tabulky.baml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\UserControls\LoadingAnimation.baml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\Pages\Home.baml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\SplashScreenWindow.baml
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice.g.resources
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice.exe
+F:\formsy\ISNemocnice\1058\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice.pdb
+D:\Projects\ISNemocnice\ISNemocnice\bin\Debug\ISNemocnice.exe.config
+D:\Projects\ISNemocnice\ISNemocnice\bin\Debug\ISNemocnice.exe
+D:\Projects\ISNemocnice\ISNemocnice\bin\Debug\ISNemocnice.pdb
+D:\Projects\ISNemocnice\ISNemocnice\bin\Debug\EntityFramework.dll
+D:\Projects\ISNemocnice\ISNemocnice\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\ISNemocnice\ISNemocnice\bin\Debug\FirstFloor.ModernUI.dll
+D:\Projects\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.Edm.dll
+D:\Projects\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.OData.dll
+D:\Projects\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.Services.Client.dll
+D:\Projects\ISNemocnice\ISNemocnice\bin\Debug\System.Spatial.dll
+D:\Projects\ISNemocnice\ISNemocnice\bin\Debug\EntityFramework.xml
+D:\Projects\ISNemocnice\ISNemocnice\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\ISNemocnice\ISNemocnice\bin\Debug\FirstFloor.ModernUI.xml
+D:\Projects\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.Edm.xml
+D:\Projects\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.OData.xml
+D:\Projects\ISNemocnice\ISNemocnice\bin\Debug\Microsoft.Data.Services.Client.xml
+D:\Projects\ISNemocnice\ISNemocnice\bin\Debug\System.Spatial.xml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\ISNemocniceKlient.csprojResolveAssemblyReference.cache
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\FormRegistrace.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\PohledPacient.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\PohledZaznam.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Ordinace.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Statistika.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\UserControls\Block.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\LoginForm.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\MainWindow.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\About.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\SettingsAppearance.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\LoginTabs.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Settings.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\App.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\FormRegistrace.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\PohledPacient.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\PohledZaznam.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Ordinace.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Statistika.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Tabulky.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\UserControls\Block.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\UserControls\LoadingAnimation.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\LoginForm.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\MainWindow.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\About.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Content\SettingsAppearance.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Home.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\LoginTabs.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Settings.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\SplashScreenWindow.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\App.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice_MarkupCompile.cache
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice_MarkupCompile.lref
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Tabulky.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\UserControls\LoadingAnimation.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\Pages\Home.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\SplashScreenWindow.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice.g.resources
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice.exe
+D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\ISNemocnice.pdb

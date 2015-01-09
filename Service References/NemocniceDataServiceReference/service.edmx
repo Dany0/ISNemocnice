@@ -1,0 +1,162 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices m:DataServiceVersion="1.0" m:MaxDataServiceVersion="3.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+    <Schema Namespace="dbNemocniceModel" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <EntityType Name="Lekar">
+        <Key>
+          <PropertyRef Name="idLekar" />
+        </Key>
+        <Property Name="idLekar" Type="Edm.Int32" Nullable="false" p6:StoreGeneratedPattern="Identity" xmlns:p6="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="Jmeno" Type="Edm.String" Nullable="false" MaxLength="512" FixedLength="false" Unicode="true" />
+        <Property Name="Prijmeni" Type="Edm.String" Nullable="false" MaxLength="512" FixedLength="false" Unicode="true" />
+        <Property Name="DatumNarozeni" Type="Edm.DateTime" Nullable="false" Precision="3" />
+        <Property Name="Telefon" Type="Edm.String" MaxLength="10" FixedLength="true" Unicode="true" />
+        <Property Name="Email" Type="Edm.String" MaxLength="256" FixedLength="false" Unicode="true" />
+        <Property Name="Poznamka" Type="Edm.String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        <NavigationProperty Name="tbOrdinace" Relationship="dbNemocniceModel.FK_tbOrdinace_tbLekari" ToRole="tbOrdinace" FromRole="tbLekari" />
+        <NavigationProperty Name="tbZaznamy" Relationship="dbNemocniceModel.FK_tbZaznamy_tbLekari" ToRole="tbZaznamy" FromRole="Lekar" />
+      </EntityType>
+      <EntityType Name="Ordinace">
+        <Key>
+          <PropertyRef Name="idOrdinace" />
+        </Key>
+        <Property Name="idOrdinace" Type="Edm.Int32" Nullable="false" p6:StoreGeneratedPattern="Identity" xmlns:p6="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="idLekar" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Mistnost" Type="Edm.Int16" Nullable="false" />
+        <Property Name="Patro" Type="Edm.Int16" Nullable="false" />
+        <Property Name="Blok" Type="Edm.String" MaxLength="3" FixedLength="true" Unicode="true" />
+        <NavigationProperty Name="tbLekari" Relationship="dbNemocniceModel.FK_tbOrdinace_tbLekari" ToRole="tbLekari" FromRole="tbOrdinace" />
+      </EntityType>
+      <EntityType Name="Ucet">
+        <Key>
+          <PropertyRef Name="IdUcet" />
+        </Key>
+        <Property Name="IdUcet" Type="Edm.Int32" Nullable="false" p6:StoreGeneratedPattern="Identity" xmlns:p6="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="NazevUctu" Type="Edm.String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+        <Property Name="Heslo" Type="Edm.String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+        <Property Name="Jmeno" Type="Edm.String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+        <Property Name="Prijmeni" Type="Edm.String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+        <Property Name="Pohlavi" Type="Edm.Boolean" />
+        <Property Name="DatumNarozeni" Type="Edm.DateTime" Nullable="false" Precision="3" />
+        <Property Name="Adresa" Type="Edm.String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        <Property Name="Funkce" Type="Edm.Int16" Nullable="false" />
+        <Property Name="Aktivovany" Type="Edm.Boolean" Nullable="false" />
+      </EntityType>
+      <EntityType Name="LekarskaZprava">
+        <Key>
+          <PropertyRef Name="idZprava" />
+        </Key>
+        <Property Name="idZprava" Type="Edm.Int32" Nullable="false" p6:StoreGeneratedPattern="Identity" xmlns:p6="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="idZaznam" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Titulek" Type="Edm.String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+        <Property Name="Popis" Type="Edm.String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+        <Property Name="PredepsaneLeky" Type="Edm.String" MaxLength="50" FixedLength="false" Unicode="true" />
+        <Property Name="DatumDalsiKontroly" Type="Edm.DateTime" />
+        <Property Name="Uzavrena" Type="Edm.Boolean" Nullable="false" />
+        <Property Name="DatumVytvoreni" Type="Edm.DateTime" Precision="3" />
+        <NavigationProperty Name="tbZaznamy" Relationship="dbNemocniceModel.FK_tbLekarskeZpravy_tbZaznamy" ToRole="tbZaznamy" FromRole="tbLekarskeZpravy" />
+      </EntityType>
+      <EntityType Name="Pacient">
+        <Key>
+          <PropertyRef Name="idPacient" />
+        </Key>
+        <Property Name="idPacient" Type="Edm.Int32" Nullable="false" p6:StoreGeneratedPattern="Identity" xmlns:p6="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="Jmeno" Type="Edm.String" MaxLength="256" FixedLength="false" Unicode="true" />
+        <Property Name="Prijmeni" Type="Edm.String" MaxLength="256" FixedLength="false" Unicode="true" />
+        <Property Name="RodneCislo" Type="Edm.String" MaxLength="10" FixedLength="true" Unicode="true" />
+        <Property Name="Pohlavi" Type="Edm.Boolean" />
+        <Property Name="DatumNarozeni" Type="Edm.DateTime" Precision="3" />
+        <Property Name="Adresa" Type="Edm.String" MaxLength="256" FixedLength="false" Unicode="true" />
+        <Property Name="Telefon" Type="Edm.String" MaxLength="11" FixedLength="true" Unicode="true" />
+        <Property Name="Email" Type="Edm.String" MaxLength="256" FixedLength="false" Unicode="true" />
+        <Property Name="Poznamka" Type="Edm.String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        <NavigationProperty Name="tbZaznamy" Relationship="dbNemocniceModel.FK_tbZaznamy_tbPacienti1" ToRole="tbZaznamy" FromRole="tbPacienti" />
+      </EntityType>
+      <EntityType Name="Zaznam">
+        <Key>
+          <PropertyRef Name="idZaznam" />
+        </Key>
+        <Property Name="idZaznam" Type="Edm.Int32" Nullable="false" />
+        <Property Name="idLekar" Type="Edm.Int32" Nullable="false" />
+        <Property Name="idPacient" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Poznamka" Type="Edm.String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+        <NavigationProperty Name="tbLekari" Relationship="dbNemocniceModel.FK_tbZaznamy_tbLekari" ToRole="Lekar" FromRole="tbZaznamy" />
+        <NavigationProperty Name="tbLekarskeZpravy" Relationship="dbNemocniceModel.FK_tbLekarskeZpravy_tbZaznamy" ToRole="tbLekarskeZpravy" FromRole="tbZaznamy" />
+        <NavigationProperty Name="tbPacienti" Relationship="dbNemocniceModel.FK_tbZaznamy_tbPacienti1" ToRole="tbPacienti" FromRole="tbZaznamy" />
+      </EntityType>
+      <Association Name="FK_tbOrdinace_tbLekari">
+        <End Type="dbNemocniceModel.Lekar" Role="tbLekari" Multiplicity="1" />
+        <End Type="dbNemocniceModel.Ordinace" Role="tbOrdinace" Multiplicity="*" />
+        <ReferentialConstraint>
+          <Principal Role="tbLekari">
+            <PropertyRef Name="idLekar" />
+          </Principal>
+          <Dependent Role="tbOrdinace">
+            <PropertyRef Name="idLekar" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="FK_tbZaznamy_tbLekari">
+        <End Type="dbNemocniceModel.Lekar" Role="Lekar" Multiplicity="1" />
+        <End Type="dbNemocniceModel.Zaznam" Role="tbZaznamy" Multiplicity="*" />
+        <ReferentialConstraint>
+          <Principal Role="Lekar">
+            <PropertyRef Name="idLekar" />
+          </Principal>
+          <Dependent Role="tbZaznamy">
+            <PropertyRef Name="idLekar" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="FK_tbLekarskeZpravy_tbZaznamy">
+        <End Type="dbNemocniceModel.Zaznam" Role="tbZaznamy" Multiplicity="1" />
+        <End Type="dbNemocniceModel.LekarskaZprava" Role="tbLekarskeZpravy" Multiplicity="*" />
+        <ReferentialConstraint>
+          <Principal Role="tbZaznamy">
+            <PropertyRef Name="idZaznam" />
+          </Principal>
+          <Dependent Role="tbLekarskeZpravy">
+            <PropertyRef Name="idZaznam" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="FK_tbZaznamy_tbPacienti1">
+        <End Type="dbNemocniceModel.Pacient" Role="tbPacienti" Multiplicity="1" />
+        <End Type="dbNemocniceModel.Zaznam" Role="tbZaznamy" Multiplicity="*" />
+        <ReferentialConstraint>
+          <Principal Role="tbPacienti">
+            <PropertyRef Name="idPacient" />
+          </Principal>
+          <Dependent Role="tbZaznamy">
+            <PropertyRef Name="idPacient" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+    </Schema>
+    <Schema Namespace="ISNemocniceDataServer" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <EntityContainer Name="dbNemocniceEntities" m:IsDefaultEntityContainer="true" p6:LazyLoadingEnabled="true" xmlns:p6="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntitySet Name="tbLekari" EntityType="dbNemocniceModel.Lekar" />
+        <EntitySet Name="tbOrdinace" EntityType="dbNemocniceModel.Ordinace" />
+        <EntitySet Name="tbUcty" EntityType="dbNemocniceModel.Ucet" />
+        <EntitySet Name="tbLekarskeZpravy" EntityType="dbNemocniceModel.LekarskaZprava" />
+        <EntitySet Name="tbPacienti" EntityType="dbNemocniceModel.Pacient" />
+        <EntitySet Name="tbZaznamy" EntityType="dbNemocniceModel.Zaznam" />
+        <AssociationSet Name="FK_tbOrdinace_tbLekari" Association="dbNemocniceModel.FK_tbOrdinace_tbLekari">
+          <End Role="tbLekari" EntitySet="tbLekari" />
+          <End Role="tbOrdinace" EntitySet="tbOrdinace" />
+        </AssociationSet>
+        <AssociationSet Name="FK_tbZaznamy_tbLekari" Association="dbNemocniceModel.FK_tbZaznamy_tbLekari">
+          <End Role="Lekar" EntitySet="tbLekari" />
+          <End Role="tbZaznamy" EntitySet="tbZaznamy" />
+        </AssociationSet>
+        <AssociationSet Name="FK_tbLekarskeZpravy_tbZaznamy" Association="dbNemocniceModel.FK_tbLekarskeZpravy_tbZaznamy">
+          <End Role="tbLekarskeZpravy" EntitySet="tbLekarskeZpravy" />
+          <End Role="tbZaznamy" EntitySet="tbZaznamy" />
+        </AssociationSet>
+        <AssociationSet Name="FK_tbZaznamy_tbPacienti1" Association="dbNemocniceModel.FK_tbZaznamy_tbPacienti1">
+          <End Role="tbPacienti" EntitySet="tbPacienti" />
+          <End Role="tbZaznamy" EntitySet="tbZaznamy" />
+        </AssociationSet>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

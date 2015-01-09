@@ -1,0 +1,44 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+            xmlns:ds="clr-namespace:ISNemocniceKlient.NemocniceDataServiceReference"
+             xmlns:ISNemocniceKlient="clr-namespace:ISNemocniceKlient" xmlns:ComponentModel="clr-namespace:System.ComponentModel;assembly=WindowsBase" x:Class="ISNemocniceKlient.Pages.Home" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" Loaded="UserControl_Loaded">
+    <UserControl.Resources>
+        <CollectionViewSource x:Key="dbNemocniceEntitiesViewSource" d:DesignSource="{d:DesignInstance {x:Type ds:dbNemocniceEntities}, CreateList=True}"/>
+        <CollectionViewSource x:Key="dbNemocniceEntitiestbLekariViewSource" Source="{Binding tbLekari, Source={StaticResource dbNemocniceEntitiesViewSource}}">
+            <CollectionViewSource.SortDescriptions>
+                <ComponentModel:SortDescription Direction="Ascending" PropertyName="idLekar"/>
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
+        <CollectionViewSource x:Key="tbLekariViewSource" d:DesignSource="{d:DesignInstance {x:Type ds:Lekar}, CreateList=True}"/>
+    </UserControl.Resources>
+    <Grid Style="{StaticResource ContentRoot}" DataContext="{StaticResource dbNemocniceEntitiestbLekariViewSource}">
+        <ScrollViewer>
+            <StackPanel MinWidth="200">
+                <TextBlock Text="TODO: lots of stuff" />
+                <DataGrid x:Name="tbLekariDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" Height="200" ItemsSource="{Binding Source={StaticResource tbLekariViewSource}}" RowDetailsVisibilityMode="VisibleWhenSelected" Width="400" HorizontalAlignment="Left">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="idLekarColumn" Binding="{Binding idLekar}" Header="id Lekar" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="jmenoColumn" Binding="{Binding Jmeno}" Header="Jmeno" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="prijmeniColumn" Binding="{Binding Prijmeni}" Header="Prijmeni" Width="SizeToHeader"/>
+                        <DataGridTemplateColumn x:Name="datumNarozeniColumn" Header="Datum Narozeni" Width="SizeToHeader">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <DatePicker SelectedDate="{Binding DatumNarozeni, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn x:Name="telefonColumn" Binding="{Binding Telefon}" Header="Telefon" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="emailColumn" Binding="{Binding Email}" Header="Email" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="poznamkaColumn" Binding="{Binding Poznamka}" Header="Poznamka" Width="SizeToHeader"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Button Content="Novy Test" Width="128" Click="Button_Click"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

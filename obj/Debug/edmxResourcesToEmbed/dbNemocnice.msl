@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbNemocniceModelStoreContainer" CdmEntityContainer="dbNemocniceEntities">
+    <EntitySetMapping Name="tbLekari">
+      <EntityTypeMapping TypeName="IsTypeOf(dbNemocniceModel.Lekar)">
+        <MappingFragment StoreEntitySet="tbLekari">
+          <ScalarProperty Name="idLekar" ColumnName="idLekar" />
+          <ScalarProperty Name="Jmeno" ColumnName="Jmeno" />
+          <ScalarProperty Name="Prijmeni" ColumnName="Prijmeni" />
+          <ScalarProperty Name="DatumNarozeni" ColumnName="DatumNarozeni" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Poznamka" ColumnName="Poznamka" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbOrdinace">
+      <EntityTypeMapping TypeName="IsTypeOf(dbNemocniceModel.Ordinace)">
+        <MappingFragment StoreEntitySet="tbOrdinace">
+          <ScalarProperty Name="idOrdinace" ColumnName="idOrdinace" />
+          <ScalarProperty Name="idLekar" ColumnName="idLekar" />
+          <ScalarProperty Name="Mistnost" ColumnName="Mistnost" />
+          <ScalarProperty Name="Patro" ColumnName="Patro" />
+          <ScalarProperty Name="Blok" ColumnName="Blok" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbUcty">
+      <EntityTypeMapping TypeName="IsTypeOf(dbNemocniceModel.Ucet)">
+        <MappingFragment StoreEntitySet="tbUcty">
+          <ScalarProperty Name="IdUcet" ColumnName="IdUcet" />
+          <ScalarProperty Name="NazevUctu" ColumnName="NazevUctu" />
+          <ScalarProperty Name="Heslo" ColumnName="Heslo" />
+          <ScalarProperty Name="Jmeno" ColumnName="Jmeno" />
+          <ScalarProperty Name="Prijmeni" ColumnName="Prijmeni" />
+          <ScalarProperty Name="Pohlavi" ColumnName="Pohlavi" />
+          <ScalarProperty Name="DatumNarozeni" ColumnName="DatumNarozeni" />
+          <ScalarProperty Name="Adresa" ColumnName="Adresa" />
+          <ScalarProperty Name="Funkce" ColumnName="Funkce" />
+          <ScalarProperty Name="Aktivovany" ColumnName="Aktivovany" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbPacienti">
+      <EntityTypeMapping TypeName="IsTypeOf(dbNemocniceModel.Pacient)">
+        <MappingFragment StoreEntitySet="tbPacienti">
+          <ScalarProperty Name="IdPacient" ColumnName="IdPacient" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
