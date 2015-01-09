@@ -1,7 +1,7 @@
 # ISNemocnice
 WPF aplikace využívající WCF DataService. Školní projekt ze střední.
 
-![Preview](http://i.imgur.com/Y8wGRiP.png)
+![Preview](http://i.imgur.com/OI2CMY2.png)
 
 Funkce:
  - přihlašení/odhlášení/registrace účtu
