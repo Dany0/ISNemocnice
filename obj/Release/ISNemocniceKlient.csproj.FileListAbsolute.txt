@@ -55,3 +55,5 @@ D:\Projects\ISNemocnice\ISNemocnice\obj\Release\SplashScreenWindow.baml
 D:\Projects\ISNemocnice\ISNemocnice\obj\Release\ISNemocnice.g.resources
 D:\Projects\ISNemocnice\ISNemocnice\obj\Release\ISNemocnice.exe
 D:\Projects\ISNemocnice\ISNemocnice\obj\Release\ISNemocnice.pdb
+D:\Projects\ISNemocnice\ISNemocnice\obj\Release\Content\PohledPacientaPoznamkaDialog.baml
+D:\Projects\ISNemocnice\ISNemocnice\obj\Release\Content\PohledPacientaPoznamkaDialog.g.cs
