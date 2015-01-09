@@ -37,32 +37,76 @@ namespace ISNemocniceKlient.Pages
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
+            FormCommunicator.RegisterForm(this, (this.FramePacient.Content as PohledPacient));
             this.LocalDataPacienti = IONemocnice.dbNemocniceContext.tbPacienti.Execute().ToList();
             this.LocalDataLekarskeZaznamy = IONemocnice.dbNemocniceContext.tbLekarskeZpravy.Execute().ToList();
-            this.UpdatePacienti();
-            this.UpdateLekarskeZaznamy();
+            this.UpdatePacientiListBox();
+            this.UpdateLekarskeZaznamyListBox();
         }
 
-        private void UpdatePacienti()
+        private void UpdatePacientiListBox()
         {
+            this.listBoxPacienti.Items.Clear();
             foreach (Pacient pac in this.LocalDataPacienti)
             {
                 this.listBoxPacienti.Items.Add(String.Format("{0} {1} | {2} | {3}", pac.Jmeno, pac.Prijmeni, pac.Adresa, pac.RodneCislo));
             }
+            this.listBoxPacienti.Items.Add(new ListBoxItem() { Content = "--- Nový pacient ---", HorizontalContentAlignment = System.Windows.HorizontalAlignment.Center });
         }
 
-        private void UpdateLekarskeZaznamy()
+        private void UpdateLekarskeZaznamyListBox()
         {
-            foreach (LekarskaZprava lz in this.LocalDataLekarskeZaznamy)
+            this.listBoxZaznamy.Items.Clear();
+            if (this.VybranyPacient != null)
             {
-                this.listBoxZaznamy.Items.Add(String.Format("{0} {1}", lz.Titulek, lz.Uzavrena.ToString()));
+                foreach (LekarskaZprava lz in this.LocalDataLekarskeZaznamy.Where(lz => lz.idPacient == this.VybranyPacient.idPacient))
+                {
+                    string uzavrenaString = lz.Uzavrena ? "Uzavřeno" : "Neuzaveřeno";
+                    this.listBoxZaznamy.Items.Add(String.Format("{0} | {1} : {2}", uzavrenaString, lz.Titulek, lz.DatumDalsiKontroly.ToString()));
+                }
             }
         }
 
         private void listBoxPacienti_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            this.VybranyPacient = IONemocnice.dbNemocniceContext.tbPacienti.ToList().ElementAt(((ListBox)sender).SelectedIndex);
-            ((PohledPacient)this.FramePacient.Content).ZobrazPacienta(this.VybranyPacient);
+            ListBox listBox = (sender as ListBox);
+            if (listBox.SelectedIndex < listBox.Items.Count - 1 && listBox.SelectedIndex >= 0) // posledni prvek je specialni - "Novy Pacient"
+            {
+                this.VybranyPacient = IONemocnice.dbNemocniceContext.tbPacienti.ToList().ElementAt(listBox.SelectedIndex);
+                (FormCommunicator.GetChild(this) as PohledPacient).ZobrazPacienta(this.VybranyPacient);
+                (listBox.Items.GetItemAt(listBox.Items.Count - 1) as ListBoxItem).Content = "--- Nový pacient ---";
+            }
+            else if (listBox.SelectedIndex == listBox.Items.Count - 1 && listBox.Items.Count > 0) //listBox.Items.Count > 0 bugfix
+            {
+                this.VybranyPacient = null;
+                (listBox.SelectedItem as ListBoxItem).Content = "--- Zadávate nového pacienta ---";
+                (FormCommunicator.GetChild(this) as PohledPacient).NovyPacient();
+            }
+            this.UpdateLekarskeZaznamyListBox();
+        }
+
+        public void UpdatePacienta(Pacient pacientVstup)
+        {
+            if (this.VybranyPacient == null)
+            {
+
+            }
+            else
+            {
+                Pacient pacientNaZmeneni = IONemocnice.dbNemocniceContext.tbPacienti.Where(p => p.idPacient == pacientVstup.idPacient).Single();
+                pacientNaZmeneni.Jmeno = pacientVstup.Jmeno;
+                pacientNaZmeneni.Prijmeni = pacientVstup.Prijmeni;
+                pacientNaZmeneni.Pohlavi = pacientVstup.Pohlavi;
+                pacientNaZmeneni.RodneCislo = pacientVstup.RodneCislo;
+                pacientNaZmeneni.Telefon = pacientVstup.Telefon;
+                pacientNaZmeneni.Email = pacientVstup.Email;
+                pacientNaZmeneni.DatumNarozeni = pacientVstup.DatumNarozeni;
+                pacientNaZmeneni.Adresa = pacientVstup.Adresa;
+                pacientNaZmeneni.Poznamka = pacientVstup.Poznamka;
+                IONemocnice.dbNemocniceContext.UpdateObject(pacientNaZmeneni);
+                IONemocnice.dbNemocniceContext.SaveChanges();
+                this.UpdatePacientiListBox();
+            }
         }
     }
 }

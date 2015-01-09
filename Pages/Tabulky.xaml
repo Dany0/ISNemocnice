@@ -12,7 +12,6 @@
         <CollectionViewSource x:Key="tbOrdinaceViewSource" d:DesignSource="{d:DesignInstance {x:Type NemocniceDataServiceReference:Ordinace}, CreateList=True}"/>
         <CollectionViewSource x:Key="tbPacientiViewSource" d:DesignSource="{d:DesignInstance {x:Type NemocniceDataServiceReference:Pacient}, CreateList=True}"/>
         <CollectionViewSource x:Key="tbUctyViewSource" d:DesignSource="{d:DesignInstance {x:Type NemocniceDataServiceReference:Ucet}, CreateList=True}"/>
-        <CollectionViewSource x:Key="tbZaznamyViewSource" d:DesignSource="{d:DesignInstance {x:Type NemocniceDataServiceReference:Zaznam}, CreateList=True}"/>
     </UserControl.Resources>
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
@@ -111,14 +110,6 @@
                         <DataGridTextColumn x:Name="nazevUctuColumn" Binding="{Binding NazevUctu}" Header="Nazev Uctu" Width="SizeToHeader"/>
                         <DataGridCheckBoxColumn x:Name="pohlaviColumn1" Binding="{Binding Pohlavi}" Header="Pohlavi" Width="SizeToHeader"/>
                         <DataGridTextColumn x:Name="prijmeniColumn2" Binding="{Binding Prijmeni}" Header="Prijmeni" Width="SizeToHeader"/>
-                    </DataGrid.Columns>
-                </DataGrid>
-                <DataGrid x:Name="tbZaznamyDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" Height="200" ItemsSource="{Binding Source={StaticResource tbZaznamyViewSource}}" RowDetailsVisibilityMode="VisibleWhenSelected" Width="400">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn x:Name="idLekarColumn2" Binding="{Binding idLekar}" Header="id Lekar" Width="SizeToHeader"/>
-                        <DataGridTextColumn x:Name="idPacientColumn1" Binding="{Binding idPacient}" Header="id Pacient" Width="SizeToHeader"/>
-                        <DataGridTextColumn x:Name="idZaznamColumn1" Binding="{Binding idZaznam}" Header="id Zaznam" Width="SizeToHeader"/>
-                        <DataGridTextColumn x:Name="poznamkaColumn2" Binding="{Binding Poznamka}" Header="Poznamka" Width="SizeToHeader"/>
                     </DataGrid.Columns>
                 </DataGrid>
 

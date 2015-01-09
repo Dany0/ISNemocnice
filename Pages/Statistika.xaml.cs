@@ -45,7 +45,7 @@ namespace ISNemocniceKlient.Pages
                     NemocniceKlient.Instance.FunkcePrihlasenehoUctuString(),
                     Math.Floor(vek.TotalDays / 365.2425),
                     Math.Floor(vek.TotalDays),
-                    Math.Floor(vek.TotalHours),
+                    Math.Floor(vek.TotalHours) % 24,
                     Math.Floor(vek.TotalMinutes - vek.TotalHours * 60)
                 );
         }

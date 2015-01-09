@@ -36,7 +36,6 @@ namespace ISNemocniceKlient.Content
         {
             if (NemocniceKlient.Instance.PrihlasitUcet(this.txtBoxLogin.Text, this.pswdBoxHeslo.Password))
             {
-                //MessageBox.Show(String.Format("Uzivatel {0} byl uspesne prihlasen.", this.txtBoxLogin.Text));
                 this.pswdBoxHeslo.Password = string.Empty;
             }
         }
@@ -44,11 +43,6 @@ namespace ISNemocniceKlient.Content
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
             Keyboard.Focus(this.txtBoxLogin);
-            if (NemocniceKlient.Instance.PrihlasenyUcet == null)
-            {
-                //((LoginTabs)this.Parent).btnOdhlasitSe.IsEnabled = false; //pozor nebezpeci
-                //ModernDialog.ShowMessage(((Grid)(((ModernFrame)this.Parent).Parent)).Parent.ToString(), "", MessageBoxButton.OK);
-            }
         }
 
         private void UserControl_KeyDown(object sender, KeyEventArgs e)

@@ -30,7 +30,6 @@ namespace ISNemocniceKlient.Pages
         public CollectionViewSource tbOrdinaceViewSource;
         public CollectionViewSource tbPacientiViewSource;
         public CollectionViewSource tbUctyViewSource;
-        public CollectionViewSource tbZaznamyViewSource;
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
@@ -41,14 +40,12 @@ namespace ISNemocniceKlient.Pages
                 tbOrdinaceViewSource = ((CollectionViewSource)(this.Resources["tbOrdinaceViewSource"]));
                 tbPacientiViewSource = ((CollectionViewSource)(this.Resources["tbPacientiViewSource"]));
                 tbUctyViewSource = ((CollectionViewSource)(this.Resources["tbUctyViewSource"]));
-                tbZaznamyViewSource = ((CollectionViewSource)(this.Resources["tbZaznamyViewSource"]));
 
                 tbLekariViewSource.Source = IONemocnice.dbNemocniceContext.tbLekari.Execute().ToList();
                 tbLekarskeZpravyViewSource.Source = IONemocnice.dbNemocniceContext.tbLekarskeZpravy.Execute().ToList();
                 tbOrdinaceViewSource.Source = IONemocnice.dbNemocniceContext.tbOrdinace.Execute().ToList();
                 tbPacientiViewSource.Source = IONemocnice.dbNemocniceContext.tbPacienti.Execute().ToList();
                 tbUctyViewSource.Source = IONemocnice.dbNemocniceContext.tbUcty.Execute().ToList();
-                tbZaznamyViewSource.Source = IONemocnice.dbNemocniceContext.tbUcty.Execute().ToList();
             }
         }
     }

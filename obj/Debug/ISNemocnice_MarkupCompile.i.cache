@@ -4,17 +4,17 @@
 exe
 C#
 .cs
-D:\Projects\ISNemocnice\ISNemocnice\obj\Debug\
+F:\formsy\ISNemocnice\final 2050\ISNemocnice\ISNemocnice\obj\Debug\
 ISNemocniceKlient
 none
 false
 DEBUG;TRACE
-D:\Projects\ISNemocnice\ISNemocnice\App.xaml
-16361451961
+F:\formsy\ISNemocnice\final 2050\ISNemocnice\ISNemocnice\App.xaml
+17-2003050971
 
-281990659557
-30-1813588564
-Content\FormRegistrace.xaml;Content\PohledPacient.xaml;Content\PohledZaznam.xaml;Pages\Ordinace.xaml;Pages\Statistika.xaml;Pages\Tabulky.xaml;UserControls\Block.xaml;UserControls\LoadingAnimation.xaml;Content\LoginForm.xaml;MainWindow.xaml;Content\About.xaml;Content\SettingsAppearance.xaml;Pages\Home.xaml;Pages\LoginTabs.xaml;Pages\Settings.xaml;SplashScreenWindow.xaml;
+30455220504
+30-1988692699
+Content\FormRegistrace.xaml;Content\PohledPacient.xaml;Content\PohledPacientaPoznamkaDialog.xaml;Content\PohledZaznam.xaml;Pages\Ordinace.xaml;Pages\Statistika.xaml;Pages\Tabulky.xaml;UserControls\Block.xaml;UserControls\LoadingAnimation.xaml;Content\LoginForm.xaml;MainWindow.xaml;Content\About.xaml;Content\SettingsAppearance.xaml;Pages\Home.xaml;Pages\LoginTabs.xaml;Pages\Settings.xaml;SplashScreenWindow.xaml;
 
 False
 

@@ -119,10 +119,14 @@
     <Compile Include="Content\PohledPacient.xaml.cs">
       <DependentUpon>PohledPacient.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Content\PohledPacientaPoznamkaDialog.xaml.cs">
+      <DependentUpon>PohledPacientaPoznamkaDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Content\PohledZaznam.xaml.cs">
       <DependentUpon>PohledZaznam.xaml</DependentUpon>
     </Compile>
     <Compile Include="ControlValidator.cs" />
+    <Compile Include="FormCommunicator.cs" />
     <Compile Include="IONemocnice.cs" />
     <Compile Include="NemocniceKlient.cs" />
     <Compile Include="Pages\LoginTabs.xaml.cs">
@@ -150,6 +154,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Content\PohledPacient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Content\PohledPacientaPoznamkaDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 // Original file name:
-// Generation date: 31.10.2013 1:39:54
+// Generation date: 3.11.2013 22:47:08
 namespace ISNemocniceKlient.NemocniceDataServiceReference
 {
     
@@ -76,40 +76,6 @@ namespace ISNemocniceKlient.NemocniceDataServiceReference
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private global::System.Data.Services.Client.DataServiceQuery<Lekar> _tbLekari;
         /// <summary>
-        /// There are no comments for tbOrdinace in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<Ordinace> tbOrdinace
-        {
-            get
-            {
-                if ((this._tbOrdinace == null))
-                {
-                    this._tbOrdinace = base.CreateQuery<Ordinace>("tbOrdinace");
-                }
-                return this._tbOrdinace;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<Ordinace> _tbOrdinace;
-        /// <summary>
-        /// There are no comments for tbUcty in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<Ucet> tbUcty
-        {
-            get
-            {
-                if ((this._tbUcty == null))
-                {
-                    this._tbUcty = base.CreateQuery<Ucet>("tbUcty");
-                }
-                return this._tbUcty;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<Ucet> _tbUcty;
-        /// <summary>
         /// There are no comments for tbLekarskeZpravy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
@@ -126,6 +92,23 @@ namespace ISNemocniceKlient.NemocniceDataServiceReference
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private global::System.Data.Services.Client.DataServiceQuery<LekarskaZprava> _tbLekarskeZpravy;
+        /// <summary>
+        /// There are no comments for tbOrdinace in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<Ordinace> tbOrdinace
+        {
+            get
+            {
+                if ((this._tbOrdinace == null))
+                {
+                    this._tbOrdinace = base.CreateQuery<Ordinace>("tbOrdinace");
+                }
+                return this._tbOrdinace;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<Ordinace> _tbOrdinace;
         /// <summary>
         /// There are no comments for tbPacienti in the schema.
         /// </summary>
@@ -144,22 +127,39 @@ namespace ISNemocniceKlient.NemocniceDataServiceReference
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private global::System.Data.Services.Client.DataServiceQuery<Pacient> _tbPacienti;
         /// <summary>
-        /// There are no comments for tbZaznamy in the schema.
+        /// There are no comments for tbPacientLekar in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<Zaznam> tbZaznamy
+        public global::System.Data.Services.Client.DataServiceQuery<PacientLekar> tbPacientLekar
         {
             get
             {
-                if ((this._tbZaznamy == null))
+                if ((this._tbPacientLekar == null))
                 {
-                    this._tbZaznamy = base.CreateQuery<Zaznam>("tbZaznamy");
+                    this._tbPacientLekar = base.CreateQuery<PacientLekar>("tbPacientLekar");
                 }
-                return this._tbZaznamy;
+                return this._tbPacientLekar;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<Zaznam> _tbZaznamy;
+        private global::System.Data.Services.Client.DataServiceQuery<PacientLekar> _tbPacientLekar;
+        /// <summary>
+        /// There are no comments for tbUcty in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<Ucet> tbUcty
+        {
+            get
+            {
+                if ((this._tbUcty == null))
+                {
+                    this._tbUcty = base.CreateQuery<Ucet>("tbUcty");
+                }
+                return this._tbUcty;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<Ucet> _tbUcty;
         /// <summary>
         /// There are no comments for tbLekari in the schema.
         /// </summary>
@@ -167,22 +167,6 @@ namespace ISNemocniceKlient.NemocniceDataServiceReference
         public void AddTotbLekari(Lekar lekar)
         {
             base.AddObject("tbLekari", lekar);
-        }
-        /// <summary>
-        /// There are no comments for tbOrdinace in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddTotbOrdinace(Ordinace ordinace)
-        {
-            base.AddObject("tbOrdinace", ordinace);
-        }
-        /// <summary>
-        /// There are no comments for tbUcty in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddTotbUcty(Ucet ucet)
-        {
-            base.AddObject("tbUcty", ucet);
         }
         /// <summary>
         /// There are no comments for tbLekarskeZpravy in the schema.
@@ -193,6 +177,14 @@ namespace ISNemocniceKlient.NemocniceDataServiceReference
             base.AddObject("tbLekarskeZpravy", lekarskaZprava);
         }
         /// <summary>
+        /// There are no comments for tbOrdinace in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public void AddTotbOrdinace(Ordinace ordinace)
+        {
+            base.AddObject("tbOrdinace", ordinace);
+        }
+        /// <summary>
         /// There are no comments for tbPacienti in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
@@ -201,12 +193,20 @@ namespace ISNemocniceKlient.NemocniceDataServiceReference
             base.AddObject("tbPacienti", pacient);
         }
         /// <summary>
-        /// There are no comments for tbZaznamy in the schema.
+        /// There are no comments for tbPacientLekar in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddTotbZaznamy(Zaznam zaznam)
+        public void AddTotbPacientLekar(PacientLekar pacientLekar)
         {
-            base.AddObject("tbZaznamy", zaznam);
+            base.AddObject("tbPacientLekar", pacientLekar);
+        }
+        /// <summary>
+        /// There are no comments for tbUcty in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public void AddTotbUcty(Ucet ucet)
+        {
+            base.AddObject("tbUcty", ucet);
         }
     }
     /// <summary>
@@ -409,23 +409,281 @@ namespace ISNemocniceKlient.NemocniceDataServiceReference
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private global::System.Data.Services.Client.DataServiceCollection<Ordinace> _tbOrdinace = new global::System.Data.Services.Client.DataServiceCollection<Ordinace>(null, global::System.Data.Services.Client.TrackingMode.None);
         /// <summary>
-        /// There are no comments for tbZaznamy in the schema.
+        /// There are no comments for tbPacientLekar in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceCollection<Zaznam> tbZaznamy
+        public global::System.Data.Services.Client.DataServiceCollection<PacientLekar> tbPacientLekar
         {
             get
             {
-                return this._tbZaznamy;
+                return this._tbPacientLekar;
             }
             set
             {
-                this._tbZaznamy = value;
-                this.OnPropertyChanged("tbZaznamy");
+                this._tbPacientLekar = value;
+                this.OnPropertyChanged("tbPacientLekar");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceCollection<Zaznam> _tbZaznamy = new global::System.Data.Services.Client.DataServiceCollection<Zaznam>(null, global::System.Data.Services.Client.TrackingMode.None);
+        private global::System.Data.Services.Client.DataServiceCollection<PacientLekar> _tbPacientLekar = new global::System.Data.Services.Client.DataServiceCollection<PacientLekar>(null, global::System.Data.Services.Client.TrackingMode.None);
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for dbNemocniceModel.LekarskaZprava in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// idZprava
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.EntitySetAttribute("tbLekarskeZpravy")]
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("idZprava")]
+    public partial class LekarskaZprava : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new LekarskaZprava object.
+        /// </summary>
+        /// <param name="idZprava">Initial value of idZprava.</param>
+        /// <param name="idPacient">Initial value of idPacient.</param>
+        /// <param name="idLekar">Initial value of idLekar.</param>
+        /// <param name="titulek">Initial value of Titulek.</param>
+        /// <param name="popis">Initial value of Popis.</param>
+        /// <param name="uzavrena">Initial value of Uzavrena.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static LekarskaZprava CreateLekarskaZprava(int idZprava, int idPacient, int idLekar, string titulek, string popis, bool uzavrena)
+        {
+            LekarskaZprava lekarskaZprava = new LekarskaZprava();
+            lekarskaZprava.idZprava = idZprava;
+            lekarskaZprava.idPacient = idPacient;
+            lekarskaZprava.idLekar = idLekar;
+            lekarskaZprava.Titulek = titulek;
+            lekarskaZprava.Popis = popis;
+            lekarskaZprava.Uzavrena = uzavrena;
+            return lekarskaZprava;
+        }
+        /// <summary>
+        /// There are no comments for Property idZprava in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public int idZprava
+        {
+            get
+            {
+                return this._idZprava;
+            }
+            set
+            {
+                this.OnidZpravaChanging(value);
+                this._idZprava = value;
+                this.OnidZpravaChanged();
+                this.OnPropertyChanged("idZprava");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private int _idZprava;
+        partial void OnidZpravaChanging(int value);
+        partial void OnidZpravaChanged();
+        /// <summary>
+        /// There are no comments for Property idPacient in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public int idPacient
+        {
+            get
+            {
+                return this._idPacient;
+            }
+            set
+            {
+                this.OnidPacientChanging(value);
+                this._idPacient = value;
+                this.OnidPacientChanged();
+                this.OnPropertyChanged("idPacient");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private int _idPacient;
+        partial void OnidPacientChanging(int value);
+        partial void OnidPacientChanged();
+        /// <summary>
+        /// There are no comments for Property idLekar in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public int idLekar
+        {
+            get
+            {
+                return this._idLekar;
+            }
+            set
+            {
+                this.OnidLekarChanging(value);
+                this._idLekar = value;
+                this.OnidLekarChanged();
+                this.OnPropertyChanged("idLekar");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private int _idLekar;
+        partial void OnidLekarChanging(int value);
+        partial void OnidLekarChanged();
+        /// <summary>
+        /// There are no comments for Property Titulek in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string Titulek
+        {
+            get
+            {
+                return this._Titulek;
+            }
+            set
+            {
+                this.OnTitulekChanging(value);
+                this._Titulek = value;
+                this.OnTitulekChanged();
+                this.OnPropertyChanged("Titulek");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _Titulek;
+        partial void OnTitulekChanging(string value);
+        partial void OnTitulekChanged();
+        /// <summary>
+        /// There are no comments for Property Popis in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string Popis
+        {
+            get
+            {
+                return this._Popis;
+            }
+            set
+            {
+                this.OnPopisChanging(value);
+                this._Popis = value;
+                this.OnPopisChanged();
+                this.OnPropertyChanged("Popis");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _Popis;
+        partial void OnPopisChanging(string value);
+        partial void OnPopisChanged();
+        /// <summary>
+        /// There are no comments for Property PredepsaneLeky in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string PredepsaneLeky
+        {
+            get
+            {
+                return this._PredepsaneLeky;
+            }
+            set
+            {
+                this.OnPredepsaneLekyChanging(value);
+                this._PredepsaneLeky = value;
+                this.OnPredepsaneLekyChanged();
+                this.OnPropertyChanged("PredepsaneLeky");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _PredepsaneLeky;
+        partial void OnPredepsaneLekyChanging(string value);
+        partial void OnPredepsaneLekyChanged();
+        /// <summary>
+        /// There are no comments for Property DatumDalsiKontroly in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<global::System.DateTime> DatumDalsiKontroly
+        {
+            get
+            {
+                return this._DatumDalsiKontroly;
+            }
+            set
+            {
+                this.OnDatumDalsiKontrolyChanging(value);
+                this._DatumDalsiKontroly = value;
+                this.OnDatumDalsiKontrolyChanged();
+                this.OnPropertyChanged("DatumDalsiKontroly");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<global::System.DateTime> _DatumDalsiKontroly;
+        partial void OnDatumDalsiKontrolyChanging(global::System.Nullable<global::System.DateTime> value);
+        partial void OnDatumDalsiKontrolyChanged();
+        /// <summary>
+        /// There are no comments for Property Uzavrena in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public bool Uzavrena
+        {
+            get
+            {
+                return this._Uzavrena;
+            }
+            set
+            {
+                this.OnUzavrenaChanging(value);
+                this._Uzavrena = value;
+                this.OnUzavrenaChanged();
+                this.OnPropertyChanged("Uzavrena");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private bool _Uzavrena;
+        partial void OnUzavrenaChanging(bool value);
+        partial void OnUzavrenaChanged();
+        /// <summary>
+        /// There are no comments for Property DatumVytvoreni in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<global::System.DateTime> DatumVytvoreni
+        {
+            get
+            {
+                return this._DatumVytvoreni;
+            }
+            set
+            {
+                this.OnDatumVytvoreniChanging(value);
+                this._DatumVytvoreni = value;
+                this.OnDatumVytvoreniChanged();
+                this.OnPropertyChanged("DatumVytvoreni");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<global::System.DateTime> _DatumVytvoreni;
+        partial void OnDatumVytvoreniChanging(global::System.Nullable<global::System.DateTime> value);
+        partial void OnDatumVytvoreniChanged();
+        /// <summary>
+        /// There are no comments for tbPacientLekar in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public PacientLekar tbPacientLekar
+        {
+            get
+            {
+                return this._tbPacientLekar;
+            }
+            set
+            {
+                this._tbPacientLekar = value;
+                this.OnPropertyChanged("tbPacientLekar");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private PacientLekar _tbPacientLekar;
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
@@ -592,6 +850,421 @@ namespace ISNemocniceKlient.NemocniceDataServiceReference
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private Lekar _tbLekari;
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for dbNemocniceModel.Pacient in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// idPacient
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.EntitySetAttribute("tbPacienti")]
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("idPacient")]
+    public partial class Pacient : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new Pacient object.
+        /// </summary>
+        /// <param name="idPacient">Initial value of idPacient.</param>
+        /// <param name="jmeno">Initial value of Jmeno.</param>
+        /// <param name="prijmeni">Initial value of Prijmeni.</param>
+        /// <param name="rodneCislo">Initial value of RodneCislo.</param>
+        /// <param name="pohlavi">Initial value of Pohlavi.</param>
+        /// <param name="datumNarozeni">Initial value of DatumNarozeni.</param>
+        /// <param name="adresa">Initial value of Adresa.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static Pacient CreatePacient(int idPacient, string jmeno, string prijmeni, string rodneCislo, bool pohlavi, global::System.DateTime datumNarozeni, string adresa)
+        {
+            Pacient pacient = new Pacient();
+            pacient.idPacient = idPacient;
+            pacient.Jmeno = jmeno;
+            pacient.Prijmeni = prijmeni;
+            pacient.RodneCislo = rodneCislo;
+            pacient.Pohlavi = pohlavi;
+            pacient.DatumNarozeni = datumNarozeni;
+            pacient.Adresa = adresa;
+            return pacient;
+        }
+        /// <summary>
+        /// There are no comments for Property idPacient in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public int idPacient
+        {
+            get
+            {
+                return this._idPacient;
+            }
+            set
+            {
+                this.OnidPacientChanging(value);
+                this._idPacient = value;
+                this.OnidPacientChanged();
+                this.OnPropertyChanged("idPacient");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private int _idPacient;
+        partial void OnidPacientChanging(int value);
+        partial void OnidPacientChanged();
+        /// <summary>
+        /// There are no comments for Property Jmeno in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string Jmeno
+        {
+            get
+            {
+                return this._Jmeno;
+            }
+            set
+            {
+                this.OnJmenoChanging(value);
+                this._Jmeno = value;
+                this.OnJmenoChanged();
+                this.OnPropertyChanged("Jmeno");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _Jmeno;
+        partial void OnJmenoChanging(string value);
+        partial void OnJmenoChanged();
+        /// <summary>
+        /// There are no comments for Property Prijmeni in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string Prijmeni
+        {
+            get
+            {
+                return this._Prijmeni;
+            }
+            set
+            {
+                this.OnPrijmeniChanging(value);
+                this._Prijmeni = value;
+                this.OnPrijmeniChanged();
+                this.OnPropertyChanged("Prijmeni");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _Prijmeni;
+        partial void OnPrijmeniChanging(string value);
+        partial void OnPrijmeniChanged();
+        /// <summary>
+        /// There are no comments for Property RodneCislo in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string RodneCislo
+        {
+            get
+            {
+                return this._RodneCislo;
+            }
+            set
+            {
+                this.OnRodneCisloChanging(value);
+                this._RodneCislo = value;
+                this.OnRodneCisloChanged();
+                this.OnPropertyChanged("RodneCislo");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _RodneCislo;
+        partial void OnRodneCisloChanging(string value);
+        partial void OnRodneCisloChanged();
+        /// <summary>
+        /// There are no comments for Property Pohlavi in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public bool Pohlavi
+        {
+            get
+            {
+                return this._Pohlavi;
+            }
+            set
+            {
+                this.OnPohlaviChanging(value);
+                this._Pohlavi = value;
+                this.OnPohlaviChanged();
+                this.OnPropertyChanged("Pohlavi");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private bool _Pohlavi;
+        partial void OnPohlaviChanging(bool value);
+        partial void OnPohlaviChanged();
+        /// <summary>
+        /// There are no comments for Property DatumNarozeni in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.DateTime DatumNarozeni
+        {
+            get
+            {
+                return this._DatumNarozeni;
+            }
+            set
+            {
+                this.OnDatumNarozeniChanging(value);
+                this._DatumNarozeni = value;
+                this.OnDatumNarozeniChanged();
+                this.OnPropertyChanged("DatumNarozeni");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.DateTime _DatumNarozeni;
+        partial void OnDatumNarozeniChanging(global::System.DateTime value);
+        partial void OnDatumNarozeniChanged();
+        /// <summary>
+        /// There are no comments for Property Adresa in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string Adresa
+        {
+            get
+            {
+                return this._Adresa;
+            }
+            set
+            {
+                this.OnAdresaChanging(value);
+                this._Adresa = value;
+                this.OnAdresaChanged();
+                this.OnPropertyChanged("Adresa");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _Adresa;
+        partial void OnAdresaChanging(string value);
+        partial void OnAdresaChanged();
+        /// <summary>
+        /// There are no comments for Property Telefon in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string Telefon
+        {
+            get
+            {
+                return this._Telefon;
+            }
+            set
+            {
+                this.OnTelefonChanging(value);
+                this._Telefon = value;
+                this.OnTelefonChanged();
+                this.OnPropertyChanged("Telefon");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _Telefon;
+        partial void OnTelefonChanging(string value);
+        partial void OnTelefonChanged();
+        /// <summary>
+        /// There are no comments for Property Email in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string Email
+        {
+            get
+            {
+                return this._Email;
+            }
+            set
+            {
+                this.OnEmailChanging(value);
+                this._Email = value;
+                this.OnEmailChanged();
+                this.OnPropertyChanged("Email");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _Email;
+        partial void OnEmailChanging(string value);
+        partial void OnEmailChanged();
+        /// <summary>
+        /// There are no comments for Property Poznamka in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string Poznamka
+        {
+            get
+            {
+                return this._Poznamka;
+            }
+            set
+            {
+                this.OnPoznamkaChanging(value);
+                this._Poznamka = value;
+                this.OnPoznamkaChanged();
+                this.OnPropertyChanged("Poznamka");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _Poznamka;
+        partial void OnPoznamkaChanging(string value);
+        partial void OnPoznamkaChanged();
+        /// <summary>
+        /// There are no comments for tbPacientLekar in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceCollection<PacientLekar> tbPacientLekar
+        {
+            get
+            {
+                return this._tbPacientLekar;
+            }
+            set
+            {
+                this._tbPacientLekar = value;
+                this.OnPropertyChanged("tbPacientLekar");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceCollection<PacientLekar> _tbPacientLekar = new global::System.Data.Services.Client.DataServiceCollection<PacientLekar>(null, global::System.Data.Services.Client.TrackingMode.None);
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for dbNemocniceModel.PacientLekar in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// idPacient
+    /// idLekar
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.EntitySetAttribute("tbPacientLekar")]
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("idPacient", "idLekar")]
+    public partial class PacientLekar : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new PacientLekar object.
+        /// </summary>
+        /// <param name="idPacient">Initial value of idPacient.</param>
+        /// <param name="idLekar">Initial value of idLekar.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static PacientLekar CreatePacientLekar(int idPacient, int idLekar)
+        {
+            PacientLekar pacientLekar = new PacientLekar();
+            pacientLekar.idPacient = idPacient;
+            pacientLekar.idLekar = idLekar;
+            return pacientLekar;
+        }
+        /// <summary>
+        /// There are no comments for Property idPacient in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public int idPacient
+        {
+            get
+            {
+                return this._idPacient;
+            }
+            set
+            {
+                this.OnidPacientChanging(value);
+                this._idPacient = value;
+                this.OnidPacientChanged();
+                this.OnPropertyChanged("idPacient");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private int _idPacient;
+        partial void OnidPacientChanging(int value);
+        partial void OnidPacientChanged();
+        /// <summary>
+        /// There are no comments for Property idLekar in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public int idLekar
+        {
+            get
+            {
+                return this._idLekar;
+            }
+            set
+            {
+                this.OnidLekarChanging(value);
+                this._idLekar = value;
+                this.OnidLekarChanged();
+                this.OnPropertyChanged("idLekar");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private int _idLekar;
+        partial void OnidLekarChanging(int value);
+        partial void OnidLekarChanged();
+        /// <summary>
+        /// There are no comments for tbLekari in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public Lekar tbLekari
+        {
+            get
+            {
+                return this._tbLekari;
+            }
+            set
+            {
+                this._tbLekari = value;
+                this.OnPropertyChanged("tbLekari");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private Lekar _tbLekari;
+        /// <summary>
+        /// There are no comments for tbLekarskeZpravy in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceCollection<LekarskaZprava> tbLekarskeZpravy
+        {
+            get
+            {
+                return this._tbLekarskeZpravy;
+            }
+            set
+            {
+                this._tbLekarskeZpravy = value;
+                this.OnPropertyChanged("tbLekarskeZpravy");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceCollection<LekarskaZprava> _tbLekarskeZpravy = new global::System.Data.Services.Client.DataServiceCollection<LekarskaZprava>(null, global::System.Data.Services.Client.TrackingMode.None);
+        /// <summary>
+        /// There are no comments for tbPacienti in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public Pacient tbPacienti
+        {
+            get
+            {
+                return this._tbPacienti;
+            }
+            set
+            {
+                this._tbPacienti = value;
+                this.OnPropertyChanged("tbPacienti");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private Pacient _tbPacienti;
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
@@ -858,690 +1531,6 @@ namespace ISNemocniceKlient.NemocniceDataServiceReference
         private bool _Aktivovany;
         partial void OnAktivovanyChanging(bool value);
         partial void OnAktivovanyChanged();
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
-            }
-        }
-    }
-    /// <summary>
-    /// There are no comments for dbNemocniceModel.LekarskaZprava in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// idZprava
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.EntitySetAttribute("tbLekarskeZpravy")]
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("idZprava")]
-    public partial class LekarskaZprava : global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// Create a new LekarskaZprava object.
-        /// </summary>
-        /// <param name="idZprava">Initial value of idZprava.</param>
-        /// <param name="idZaznam">Initial value of idZaznam.</param>
-        /// <param name="titulek">Initial value of Titulek.</param>
-        /// <param name="popis">Initial value of Popis.</param>
-        /// <param name="uzavrena">Initial value of Uzavrena.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static LekarskaZprava CreateLekarskaZprava(int idZprava, int idZaznam, string titulek, string popis, bool uzavrena)
-        {
-            LekarskaZprava lekarskaZprava = new LekarskaZprava();
-            lekarskaZprava.idZprava = idZprava;
-            lekarskaZprava.idZaznam = idZaznam;
-            lekarskaZprava.Titulek = titulek;
-            lekarskaZprava.Popis = popis;
-            lekarskaZprava.Uzavrena = uzavrena;
-            return lekarskaZprava;
-        }
-        /// <summary>
-        /// There are no comments for Property idZprava in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public int idZprava
-        {
-            get
-            {
-                return this._idZprava;
-            }
-            set
-            {
-                this.OnidZpravaChanging(value);
-                this._idZprava = value;
-                this.OnidZpravaChanged();
-                this.OnPropertyChanged("idZprava");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private int _idZprava;
-        partial void OnidZpravaChanging(int value);
-        partial void OnidZpravaChanged();
-        /// <summary>
-        /// There are no comments for Property idZaznam in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public int idZaznam
-        {
-            get
-            {
-                return this._idZaznam;
-            }
-            set
-            {
-                this.OnidZaznamChanging(value);
-                this._idZaznam = value;
-                this.OnidZaznamChanged();
-                this.OnPropertyChanged("idZaznam");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private int _idZaznam;
-        partial void OnidZaznamChanging(int value);
-        partial void OnidZaznamChanged();
-        /// <summary>
-        /// There are no comments for Property Titulek in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Titulek
-        {
-            get
-            {
-                return this._Titulek;
-            }
-            set
-            {
-                this.OnTitulekChanging(value);
-                this._Titulek = value;
-                this.OnTitulekChanged();
-                this.OnPropertyChanged("Titulek");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Titulek;
-        partial void OnTitulekChanging(string value);
-        partial void OnTitulekChanged();
-        /// <summary>
-        /// There are no comments for Property Popis in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Popis
-        {
-            get
-            {
-                return this._Popis;
-            }
-            set
-            {
-                this.OnPopisChanging(value);
-                this._Popis = value;
-                this.OnPopisChanged();
-                this.OnPropertyChanged("Popis");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Popis;
-        partial void OnPopisChanging(string value);
-        partial void OnPopisChanged();
-        /// <summary>
-        /// There are no comments for Property PredepsaneLeky in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string PredepsaneLeky
-        {
-            get
-            {
-                return this._PredepsaneLeky;
-            }
-            set
-            {
-                this.OnPredepsaneLekyChanging(value);
-                this._PredepsaneLeky = value;
-                this.OnPredepsaneLekyChanged();
-                this.OnPropertyChanged("PredepsaneLeky");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _PredepsaneLeky;
-        partial void OnPredepsaneLekyChanging(string value);
-        partial void OnPredepsaneLekyChanged();
-        /// <summary>
-        /// There are no comments for Property DatumDalsiKontroly in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.DateTime> DatumDalsiKontroly
-        {
-            get
-            {
-                return this._DatumDalsiKontroly;
-            }
-            set
-            {
-                this.OnDatumDalsiKontrolyChanging(value);
-                this._DatumDalsiKontroly = value;
-                this.OnDatumDalsiKontrolyChanged();
-                this.OnPropertyChanged("DatumDalsiKontroly");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.DateTime> _DatumDalsiKontroly;
-        partial void OnDatumDalsiKontrolyChanging(global::System.Nullable<global::System.DateTime> value);
-        partial void OnDatumDalsiKontrolyChanged();
-        /// <summary>
-        /// There are no comments for Property Uzavrena in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public bool Uzavrena
-        {
-            get
-            {
-                return this._Uzavrena;
-            }
-            set
-            {
-                this.OnUzavrenaChanging(value);
-                this._Uzavrena = value;
-                this.OnUzavrenaChanged();
-                this.OnPropertyChanged("Uzavrena");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private bool _Uzavrena;
-        partial void OnUzavrenaChanging(bool value);
-        partial void OnUzavrenaChanged();
-        /// <summary>
-        /// There are no comments for Property DatumVytvoreni in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.DateTime> DatumVytvoreni
-        {
-            get
-            {
-                return this._DatumVytvoreni;
-            }
-            set
-            {
-                this.OnDatumVytvoreniChanging(value);
-                this._DatumVytvoreni = value;
-                this.OnDatumVytvoreniChanged();
-                this.OnPropertyChanged("DatumVytvoreni");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.DateTime> _DatumVytvoreni;
-        partial void OnDatumVytvoreniChanging(global::System.Nullable<global::System.DateTime> value);
-        partial void OnDatumVytvoreniChanged();
-        /// <summary>
-        /// There are no comments for tbZaznamy in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public Zaznam tbZaznamy
-        {
-            get
-            {
-                return this._tbZaznamy;
-            }
-            set
-            {
-                this._tbZaznamy = value;
-                this.OnPropertyChanged("tbZaznamy");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private Zaznam _tbZaznamy;
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
-            }
-        }
-    }
-    /// <summary>
-    /// There are no comments for dbNemocniceModel.Pacient in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// idPacient
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.EntitySetAttribute("tbPacienti")]
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("idPacient")]
-    public partial class Pacient : global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// Create a new Pacient object.
-        /// </summary>
-        /// <param name="idPacient">Initial value of idPacient.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static Pacient CreatePacient(int idPacient)
-        {
-            Pacient pacient = new Pacient();
-            pacient.idPacient = idPacient;
-            return pacient;
-        }
-        /// <summary>
-        /// There are no comments for Property idPacient in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public int idPacient
-        {
-            get
-            {
-                return this._idPacient;
-            }
-            set
-            {
-                this.OnidPacientChanging(value);
-                this._idPacient = value;
-                this.OnidPacientChanged();
-                this.OnPropertyChanged("idPacient");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private int _idPacient;
-        partial void OnidPacientChanging(int value);
-        partial void OnidPacientChanged();
-        /// <summary>
-        /// There are no comments for Property Jmeno in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Jmeno
-        {
-            get
-            {
-                return this._Jmeno;
-            }
-            set
-            {
-                this.OnJmenoChanging(value);
-                this._Jmeno = value;
-                this.OnJmenoChanged();
-                this.OnPropertyChanged("Jmeno");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Jmeno;
-        partial void OnJmenoChanging(string value);
-        partial void OnJmenoChanged();
-        /// <summary>
-        /// There are no comments for Property Prijmeni in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Prijmeni
-        {
-            get
-            {
-                return this._Prijmeni;
-            }
-            set
-            {
-                this.OnPrijmeniChanging(value);
-                this._Prijmeni = value;
-                this.OnPrijmeniChanged();
-                this.OnPropertyChanged("Prijmeni");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Prijmeni;
-        partial void OnPrijmeniChanging(string value);
-        partial void OnPrijmeniChanged();
-        /// <summary>
-        /// There are no comments for Property RodneCislo in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string RodneCislo
-        {
-            get
-            {
-                return this._RodneCislo;
-            }
-            set
-            {
-                this.OnRodneCisloChanging(value);
-                this._RodneCislo = value;
-                this.OnRodneCisloChanged();
-                this.OnPropertyChanged("RodneCislo");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _RodneCislo;
-        partial void OnRodneCisloChanging(string value);
-        partial void OnRodneCisloChanged();
-        /// <summary>
-        /// There are no comments for Property Pohlavi in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<bool> Pohlavi
-        {
-            get
-            {
-                return this._Pohlavi;
-            }
-            set
-            {
-                this.OnPohlaviChanging(value);
-                this._Pohlavi = value;
-                this.OnPohlaviChanged();
-                this.OnPropertyChanged("Pohlavi");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<bool> _Pohlavi;
-        partial void OnPohlaviChanging(global::System.Nullable<bool> value);
-        partial void OnPohlaviChanged();
-        /// <summary>
-        /// There are no comments for Property DatumNarozeni in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.DateTime> DatumNarozeni
-        {
-            get
-            {
-                return this._DatumNarozeni;
-            }
-            set
-            {
-                this.OnDatumNarozeniChanging(value);
-                this._DatumNarozeni = value;
-                this.OnDatumNarozeniChanged();
-                this.OnPropertyChanged("DatumNarozeni");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.DateTime> _DatumNarozeni;
-        partial void OnDatumNarozeniChanging(global::System.Nullable<global::System.DateTime> value);
-        partial void OnDatumNarozeniChanged();
-        /// <summary>
-        /// There are no comments for Property Adresa in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Adresa
-        {
-            get
-            {
-                return this._Adresa;
-            }
-            set
-            {
-                this.OnAdresaChanging(value);
-                this._Adresa = value;
-                this.OnAdresaChanged();
-                this.OnPropertyChanged("Adresa");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Adresa;
-        partial void OnAdresaChanging(string value);
-        partial void OnAdresaChanged();
-        /// <summary>
-        /// There are no comments for Property Telefon in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Telefon
-        {
-            get
-            {
-                return this._Telefon;
-            }
-            set
-            {
-                this.OnTelefonChanging(value);
-                this._Telefon = value;
-                this.OnTelefonChanged();
-                this.OnPropertyChanged("Telefon");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Telefon;
-        partial void OnTelefonChanging(string value);
-        partial void OnTelefonChanged();
-        /// <summary>
-        /// There are no comments for Property Email in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Email
-        {
-            get
-            {
-                return this._Email;
-            }
-            set
-            {
-                this.OnEmailChanging(value);
-                this._Email = value;
-                this.OnEmailChanged();
-                this.OnPropertyChanged("Email");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Email;
-        partial void OnEmailChanging(string value);
-        partial void OnEmailChanged();
-        /// <summary>
-        /// There are no comments for Property Poznamka in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Poznamka
-        {
-            get
-            {
-                return this._Poznamka;
-            }
-            set
-            {
-                this.OnPoznamkaChanging(value);
-                this._Poznamka = value;
-                this.OnPoznamkaChanged();
-                this.OnPropertyChanged("Poznamka");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Poznamka;
-        partial void OnPoznamkaChanging(string value);
-        partial void OnPoznamkaChanged();
-        /// <summary>
-        /// There are no comments for tbZaznamy in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceCollection<Zaznam> tbZaznamy
-        {
-            get
-            {
-                return this._tbZaznamy;
-            }
-            set
-            {
-                this._tbZaznamy = value;
-                this.OnPropertyChanged("tbZaznamy");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceCollection<Zaznam> _tbZaznamy = new global::System.Data.Services.Client.DataServiceCollection<Zaznam>(null, global::System.Data.Services.Client.TrackingMode.None);
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
-            }
-        }
-    }
-    /// <summary>
-    /// There are no comments for dbNemocniceModel.Zaznam in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// idZaznam
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.EntitySetAttribute("tbZaznamy")]
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("idZaznam")]
-    public partial class Zaznam : global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// Create a new Zaznam object.
-        /// </summary>
-        /// <param name="idZaznam">Initial value of idZaznam.</param>
-        /// <param name="idLekar">Initial value of idLekar.</param>
-        /// <param name="idPacient">Initial value of idPacient.</param>
-        /// <param name="poznamka">Initial value of Poznamka.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static Zaznam CreateZaznam(int idZaznam, int idLekar, int idPacient, string poznamka)
-        {
-            Zaznam zaznam = new Zaznam();
-            zaznam.idZaznam = idZaznam;
-            zaznam.idLekar = idLekar;
-            zaznam.idPacient = idPacient;
-            zaznam.Poznamka = poznamka;
-            return zaznam;
-        }
-        /// <summary>
-        /// There are no comments for Property idZaznam in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public int idZaznam
-        {
-            get
-            {
-                return this._idZaznam;
-            }
-            set
-            {
-                this.OnidZaznamChanging(value);
-                this._idZaznam = value;
-                this.OnidZaznamChanged();
-                this.OnPropertyChanged("idZaznam");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private int _idZaznam;
-        partial void OnidZaznamChanging(int value);
-        partial void OnidZaznamChanged();
-        /// <summary>
-        /// There are no comments for Property idLekar in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public int idLekar
-        {
-            get
-            {
-                return this._idLekar;
-            }
-            set
-            {
-                this.OnidLekarChanging(value);
-                this._idLekar = value;
-                this.OnidLekarChanged();
-                this.OnPropertyChanged("idLekar");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private int _idLekar;
-        partial void OnidLekarChanging(int value);
-        partial void OnidLekarChanged();
-        /// <summary>
-        /// There are no comments for Property idPacient in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public int idPacient
-        {
-            get
-            {
-                return this._idPacient;
-            }
-            set
-            {
-                this.OnidPacientChanging(value);
-                this._idPacient = value;
-                this.OnidPacientChanged();
-                this.OnPropertyChanged("idPacient");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private int _idPacient;
-        partial void OnidPacientChanging(int value);
-        partial void OnidPacientChanged();
-        /// <summary>
-        /// There are no comments for Property Poznamka in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Poznamka
-        {
-            get
-            {
-                return this._Poznamka;
-            }
-            set
-            {
-                this.OnPoznamkaChanging(value);
-                this._Poznamka = value;
-                this.OnPoznamkaChanged();
-                this.OnPropertyChanged("Poznamka");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Poznamka;
-        partial void OnPoznamkaChanging(string value);
-        partial void OnPoznamkaChanged();
-        /// <summary>
-        /// There are no comments for tbLekari in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public Lekar tbLekari
-        {
-            get
-            {
-                return this._tbLekari;
-            }
-            set
-            {
-                this._tbLekari = value;
-                this.OnPropertyChanged("tbLekari");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private Lekar _tbLekari;
-        /// <summary>
-        /// There are no comments for tbLekarskeZpravy in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceCollection<LekarskaZprava> tbLekarskeZpravy
-        {
-            get
-            {
-                return this._tbLekarskeZpravy;
-            }
-            set
-            {
-                this._tbLekarskeZpravy = value;
-                this.OnPropertyChanged("tbLekarskeZpravy");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceCollection<LekarskaZprava> _tbLekarskeZpravy = new global::System.Data.Services.Client.DataServiceCollection<LekarskaZprava>(null, global::System.Data.Services.Client.TrackingMode.None);
-        /// <summary>
-        /// There are no comments for tbPacienti in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public Pacient tbPacienti
-        {
-            get
-            {
-                return this._tbPacienti;
-            }
-            set
-            {
-                this._tbPacienti = value;
-                this.OnPropertyChanged("tbPacienti");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private Pacient _tbPacienti;
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]

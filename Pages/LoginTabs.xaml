@@ -17,5 +17,7 @@
         </mui:ModernTab>
 
         <mui:ModernButton x:Name="btnOdhlasitSe" IsEnabled="False" EllipseDiameter="48" EllipseStrokeThickness="2" IconWidth="30" IconHeight="30"  Content="Odhlásit se" IconData="{StaticResource OdhlasitSeIconData}" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="24" Click="btnOdhlasitSe_Click"/>
+        <Button Content="DEBUG: Login as admin" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="248" RenderTransformOrigin="0.45,-0.389" Background="Red" Foreground="Black" FontWeight="ExtraBlack" Click="Button_Click" Height="38" FontSize="18" BorderThickness="2" BorderBrush="Yellow"/>
+
     </Grid>
 </UserControl>

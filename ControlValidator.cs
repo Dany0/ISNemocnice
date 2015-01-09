@@ -7,7 +7,6 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Media;
-using System.Windows.Controls;
 
 namespace ISNemocniceKlient
 {
@@ -38,27 +37,27 @@ namespace ISNemocniceKlient
             {
                 case "txtBoxNePrazdnyString":
                     napoveda = "Musíte zadat nějaký text!";
-                    controlValidni = this.TestRegex(".+", ((TextBox)this._controlKValidaci).Text);
+                    controlValidni = this.TestRegex(".+", (this._controlKValidaci as TextBox).Text);
                     break;
                 case "passwdBoxNePrazdnyString":
                     napoveda = "Musíte zadat nějaké heslo!";
-                    controlValidni = this.TestRegex(".+", ((PasswordBox)this._controlKValidaci).Password);
+                    controlValidni = this.TestRegex(".+", (this._controlKValidaci as PasswordBox).Password);
                     break;
                 case "datePickerSpravneDatumNarozeni":
                     napoveda = "Datum narození nesmí být později než tento den či moment!";
-                    controlValidni = ((DatePicker)this._controlKValidaci).SelectedDate <= DateTime.Now;
+                    controlValidni = (this._controlKValidaci as DatePicker).SelectedDate <= DateTime.Now;
                     break;
                 case "comboBoxVybrany":
                     napoveda = "Musíte vybrat jednu možnost!";
-                    controlValidni = ((ComboBox)this._controlKValidaci).SelectedIndex != -1;
+                    controlValidni = (this._controlKValidaci as ComboBox).SelectedIndex != -1;
                     break;
                 case "txtBoxEmail":
                     napoveda = "E-Mail musí být ve formátu např. jan.honza@novak.cz!";
-                    controlValidni = this.TestRegex(@"^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$", ((TextBox)this._controlKValidaci).Text);
+                    controlValidni = this.TestRegex(@"^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$", (this._controlKValidaci as TextBox).Text);
                     break;
                 case "txtBoxTelefon":
                     napoveda = "Telefon může obsahovat pouze čísla, pomlčky a mezery!";
-                    controlValidni = this.TestRegex(@"^(\d| |-)*$", ((TextBox)this._controlKValidaci).Text);
+                    controlValidni = this.TestRegex(@"^(\d| |-)*$", (this._controlKValidaci as TextBox).Text);
                     break;
                 default:
                     break;

@@ -22,8 +22,8 @@
         <GridSplitter Grid.Column="1" />
         <ScrollViewer Grid.Column="2 " Margin="{StaticResource SplitRight}">
             <StackPanel>
-                <ListBox x:Name="listBoxZaznamy" Width="256" Height="200" Padding="4"/>
-                <mui:ModernFrame Source="/Content/PohledZaznam.xaml" x:Name="FrameZaznam" Width="256" Height="200" Padding="4"/>
+                <ListBox x:Name="listBoxZaznamy" d:DesignWidth="256" Height="200" Padding="4"/>
+                <mui:ModernFrame Source="/Content/PohledZaznam.xaml" x:Name="FrameZaznam" d:DesignWidth="256" d:DesignHeight="200" Padding="4"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

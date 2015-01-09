@@ -38,5 +38,10 @@ namespace ISNemocniceKlient.Pages
         {
             this.btnOdhlasitSe.IsEnabled = (NemocniceKlient.Instance.PrihlasenyUcet != null);
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NemocniceKlient.Instance.PrihlasitUcet("admin", "1234");
+        }
     }
 }
